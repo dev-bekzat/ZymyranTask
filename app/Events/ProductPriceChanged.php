@@ -14,10 +14,10 @@ class ProductPriceChanged
     public function __construct(public KaspiProduct \$product, public array \$seller)
     {
         Log::info('Detected dumping price', [
-            'product_id' => \$product->id,
-            'url' => \$product->product_url,
-            'competitor' => \$seller['name'],
-            'price' => \$seller['price'],
+            'product_id' => $product->id,
+            'url' => $product->product_url,
+            'competitor' => $seller['name'],
+            'price' => $seller['price'],
         ]);
     }
 }
