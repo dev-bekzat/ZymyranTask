@@ -1,0 +1,1 @@
+*/10 * * * * www-data php /var/www/artisan schedule:run >> /var/log/cron.log 2>&1

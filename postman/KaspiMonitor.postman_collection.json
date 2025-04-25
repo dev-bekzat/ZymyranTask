@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "KaspiMonitor",
+    "_postman_id": "abc123",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"product_url\": \"https://kaspi.kz/shop/p/test-url\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "List Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "products"]
+        }
+      }
+    }
+  ]
+}
